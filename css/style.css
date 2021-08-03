@@ -46,6 +46,7 @@ header {
       header .heading .text p {
         font-size: 110px; }
     header .heading span {
+      text-transform: uppercase;
       position: absolute;
       color: #fff;
       font-size: 64px;
@@ -149,8 +150,7 @@ section.list-menu {
     section.list-menu .grid .grid-menu {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      padding: 50px 0;
-      padding-left: 50px; }
+      padding: 50px; }
       section.list-menu .grid .grid-menu .menu {
         color: #fff; }
         section.list-menu .grid .grid-menu .menu h3 {
@@ -162,10 +162,10 @@ section.list-menu {
         color: #fff;
         background-color: #ffda00;
         width: 20%;
-        text-align: center;
-        margin-left: 100px; }
+        text-align: center; }
         section.list-menu .grid .grid-menu .price p {
-          font-size: 36px; }
+          font-size: 36px;
+          padding-bottom: 52px; }
   section.list-menu .sale {
     margin: 0 auto;
     width: 70%;
@@ -208,7 +208,8 @@ section.masterclass {
   background-image: url("../img/background4.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   section.masterclass h1 {
     color: #fff;
     font-size: 48px;
@@ -220,11 +221,11 @@ section.masterclass {
     height: auto;
     color: #fff;
     background-color: #ffba00;
-    position: relative;
-    left: 58.5%;
-    top: 10%; }
+    position: absolute;
+    right: 6.6%;
+    top: 20%; }
     section.masterclass .recipe h2 {
-      font-size: 50px;
+      font-size: 42px;
       text-transform: uppercase;
       padding: 50px; }
     section.masterclass .recipe .wait {
@@ -242,9 +243,9 @@ section.masterclass {
     color: #fff;
     text-transform: uppercase;
     background-color: #ffba00;
-    position: relative;
-    left: 63.4%;
-    top: 15%;
+    position: absolute;
+    right: 6.6%;
+    top: 78%;
     font-size: 50px;
     padding: 60px 0 20px 40px; }
 
@@ -273,7 +274,8 @@ section.gallery {
     text-transform: uppercase;
     position: absolute;
     left: 32%;
-    top: 10%; }
+    top: 10%;
+    z-index: 999; }
   section.gallery .grid-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -313,6 +315,11 @@ section.gallery {
       section.gallery .grid-find .here h3 {
         color: #ffba00; }
 
+footer .grid-footer .about h3, footer .grid-footer .menu h3, footer .grid-footer .shef h3, footer .grid-footer .contact h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-bottom: 30px; }
+
 footer .grid-footer .menu a, footer .grid-footer .shef a, footer .grid-footer .contact a {
   font-size: 18px;
   text-decoration: none;
@@ -330,22 +337,838 @@ footer {
     grid-template-columns: 700px 1fr 1fr 1fr;
     color: #fff;
     justify-items: center; }
-    footer .grid-footer .about h3 {
-      font-size: 24px;
-      padding-bottom: 30px; }
     footer .grid-footer .about p {
       font-size: 18px; }
-    footer .grid-footer .menu h3 {
+
+@media only screen and (max-width: 992px) {
+  header {
+    height: 600px; }
+    header .grid-nav .bran h1 {
+      padding: 5px 50px 15px 50px; }
+    header .grid-nav .nav-bar {
+      margin-top: 30px; }
+      header .grid-nav .nav-bar li a {
+        padding: 0 25px; }
+    header .heading {
+      height: 110px;
+      margin-top: 200px; }
+      header .heading .text {
+        padding-left: 15%; }
+        header .heading .text h1 {
+          font-size: 52px; }
+        header .heading .text p {
+          font-size: 52px; }
+      header .heading span {
+        font-size: 32px;
+        top: 56%;
+        left: 50%;
+        padding: 12px 25px;
+        border: 3px solid #fff; }
+
+  section.content {
+    height: 600px; }
+    section.content img {
+      margin-top: 10px;
+      width: 60%; }
+    section.content span {
+      top: 45%;
+      left: -3%;
+      font-size: 52px; }
+    section.content h4 {
+      top: 30%;
+      left: 17%;
+      font-size: 32px; }
+    section.content div {
+      top: 40%;
+      left: 6%;
+      padding: 0 40px; }
+      section.content div h3 {
+        font-size: 24px;
+        padding: 10px 10px 10px 60px; }
+    section.content h5 {
+      font-size: 22px;
+      top: 64%;
+      left: 16%; }
+
+  section.grid {
+    height: 400px; }
+    section.grid .grid-lorem {
+      grid-template-columns: 1fr;
+      margin-top: 70px;
+      grid-gap: 30px; }
+      section.grid .grid-lorem .item h2 {
+        font-size: 28px; }
+      section.grid .grid-lorem .item p {
+        color: #000;
+        font-size: 16px;
+        margin-top: 10px; }
+
+  section.list-menu {
+    height: 800px; }
+    section.list-menu span {
+      font-size: 36px;
+      padding-top: 50px; }
+    section.list-menu h1 {
+      margin-top: 50px;
+      font-size: 32px;
+      border: 2px solid #fff;
+      padding: 0 20% 4% 16%;
+      left: 17%; }
+    section.list-menu .grid {
+      margin-top: 80px;
+      width: 65%;
+      left: 35%; }
+      section.list-menu .grid .grid-menu {
+        grid-template-columns: 80% 20%;
+        padding: 20px 0;
+        padding-left: 10px; }
+        section.list-menu .grid .grid-menu .menu h3 {
+          font-size: 18px; }
+        section.list-menu .grid .grid-menu .menu p {
+          font-size: 14px; }
+        section.list-menu .grid .grid-menu .price {
+          width: 45%;
+          margin: 0; }
+          section.list-menu .grid .grid-menu .price p {
+            font-size: 18px;
+            padding-bottom: 34px; }
+    section.list-menu .sale {
+      width: 60%;
+      margin-top: 80px;
+      padding: 1% 8%; }
+      section.list-menu .sale p {
+        font-size: 24px; }
+
+  section.concept {
+    height: 300px; }
+    section.concept h1 {
+      padding-top: 90px;
+      font-size: 32px; }
+    section.concept p {
+      padding-top: 20px;
+      font-size: 14px; }
+    section.concept .flex {
+      margin-top: 10px;
+      font-size: 16px; }
+      section.concept .flex b {
+        padding: 0 10px; }
+
+  section.masterclass {
+    height: 700px; }
+    section.masterclass h1 {
       font-size: 24px;
-      text-transform: uppercase;
-      padding-bottom: 30px; }
-    footer .grid-footer .shef h3 {
+      padding: 50px 35px 0 0; }
+    section.masterclass .recipe {
+      width: 50%;
+      right: 7.6%; }
+      section.masterclass .recipe h2 {
+        font-size: 20px;
+        padding: 30px; }
+      section.masterclass .recipe .wait {
+        font-size: 28px;
+        padding-left: 30px; }
+      section.masterclass .recipe .price-time {
+        font-size: 24px;
+        margin-top: 70px;
+        padding-right: 30px; }
+    section.masterclass .apply {
+      width: 40%;
+      right: 7.6%;
       font-size: 24px;
-      text-transform: uppercase;
-      padding-bottom: 30px; }
-    footer .grid-footer .contact h3 {
+      padding: 40px 0 20px 20px; }
+
+  section.gallery {
+    height: auto; }
+    section.gallery .box1 {
+      width: 100px;
+      height: 100px;
+      margin-left: 150px; }
+    section.gallery span {
+      font-size: 20px;
+      color: #ffba00;
+      left: 45%;
+      top: 6%; }
+    section.gallery .grid-gallery {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center; }
+      section.gallery .grid-gallery .img1 {
+        grid-area: 1 / 1 / 2 / 3;
+        width: 560px;
+        height: 350px; }
+      section.gallery .grid-gallery .img2 {
+        grid-area: 2 / 1 / 3 / 2;
+        width: 275px;
+        height: 350px; }
+      section.gallery .grid-gallery .img3 {
+        grid-area: 2 / 2 / 3 / 3;
+        width: 275px;
+        height: 350px; }
+    section.gallery .box2 {
+      width: 100px;
+      height: 350px;
+      margin-left: 150px; }
+    section.gallery h1 {
+      top: 72%;
+      left: 38%;
+      font-size: 28px; }
+    section.gallery .grid-find {
+      width: 75%;
+      top: 80%;
+      left: 10%;
+      justify-items: center; }
+      section.gallery .grid-find .lorem {
+        font-size: 18px; }
+      section.gallery .grid-find .here {
+        font-size: 18px; }
+        section.gallery .grid-find .here .fa-instagram {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 7px; }
+        section.gallery .grid-find .here .fa-facebook {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 10px; }
+        section.gallery .grid-find .here .fa-twitter {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 7px; }
+        section.gallery .grid-find .here .fa-whatsapp {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 7px; }
+
+  footer {
+    height: auto; }
+    footer .grid-footer {
+      padding-top: 50px;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      text-align: center;
+      grid-gap: 20px; } }
+@media only screen and (max-width: 768px) {
+  header {
+    height: 500px; }
+    header .grid-nav {
+      grid-template-columns: 1fr; }
+      header .grid-nav .bran h1 {
+        padding: 5px 50px 15px 50px; }
+      header .grid-nav .nav-bar {
+        margin-top: 30px; }
+        header .grid-nav .nav-bar li a {
+          padding: 0 30px; }
+    header .heading {
+      height: 80px;
+      margin-top: 150px; }
+      header .heading .text {
+        padding-left: 10%; }
+        header .heading .text h1 {
+          display: inline;
+          font-size: 44px; }
+        header .heading .text p {
+          font-size: 44px; }
+      header .heading span {
+        font-size: 28px;
+        top: 56%;
+        left: 50%;
+        padding: 7px 20px;
+        border: 3px solid #fff; }
+
+  section.content {
+    height: 500px; }
+    section.content img {
+      margin-top: 10px;
+      width: 60%; }
+    section.content span {
+      top: 45%;
+      left: -3%;
+      font-size: 44px; }
+    section.content h4 {
+      top: 27%;
+      left: 17%;
+      font-size: 28px; }
+    section.content div {
+      top: 36%;
+      left: 6%;
+      padding: 0 20px; }
+      section.content div h3 {
+        font-size: 24px;
+        padding: 10px 10px 10px 60px; }
+    section.content h5 {
+      font-size: 22px;
+      top: 64%;
+      left: 17%; }
+
+  section.grid {
+    height: 420px;
+    background-color: #fff; }
+    section.grid .grid-lorem {
+      grid-template-columns: 1fr;
+      margin-top: 70px;
+      grid-gap: 30px; }
+      section.grid .grid-lorem .item h2 {
+        font-size: 28px; }
+      section.grid .grid-lorem .item p {
+        color: #000;
+        font-size: 16px;
+        margin-top: 10px; }
+
+  section.list-menu {
+    height: 800px; }
+    section.list-menu span {
+      font-size: 36px;
+      padding-top: 50px; }
+    section.list-menu h1 {
+      margin-top: 50px;
+      font-size: 32px;
+      border: 2px solid #fff;
+      padding: 0 20% 4% 16%;
+      left: 17%; }
+    section.list-menu .grid {
+      margin-top: 80px;
+      width: 65%;
+      left: 35%; }
+      section.list-menu .grid .grid-menu {
+        grid-template-columns: 80% 20%;
+        padding: 20px 0;
+        padding-left: 10px; }
+        section.list-menu .grid .grid-menu .menu h3 {
+          font-size: 18px; }
+        section.list-menu .grid .grid-menu .menu p {
+          font-size: 14px; }
+        section.list-menu .grid .grid-menu .price {
+          width: 45%;
+          margin: 0; }
+          section.list-menu .grid .grid-menu .price p {
+            font-size: 18px;
+            padding-bottom: 34px; }
+    section.list-menu .sale {
+      width: 60%;
+      margin-top: 80px;
+      padding: 1% 8%; }
+      section.list-menu .sale p {
+        font-size: 24px; }
+
+  section.concept {
+    height: 300px; }
+    section.concept h1 {
+      padding-top: 90px;
+      font-size: 32px; }
+    section.concept p {
+      padding-top: 20px;
+      font-size: 14px; }
+    section.concept .flex {
+      margin-top: 10px;
+      font-size: 16px; }
+      section.concept .flex b {
+        padding: 0 10px; }
+
+  section.masterclass {
+    height: 700px; }
+    section.masterclass h1 {
+      font-size: 28px;
+      padding: 50px 50px 0 0; }
+    section.masterclass .recipe {
+      width: 50%;
+      right: 7.6%; }
+      section.masterclass .recipe h2 {
+        font-size: 28px;
+        padding: 30px; }
+      section.masterclass .recipe .wait {
+        font-size: 28px;
+        padding-left: 30px; }
+      section.masterclass .recipe .price-time {
+        font-size: 24px;
+        margin-top: 70px;
+        padding-right: 30px; }
+    section.masterclass .apply {
+      width: 40%;
+      right: 7.6%;
       font-size: 24px;
-      text-transform: uppercase;
-      padding-bottom: 30px; }
+      padding: 40px 0 20px 20px; }
+
+  section.gallery {
+    height: auto; }
+    section.gallery .box1 {
+      width: 100px;
+      height: 100px;
+      margin-left: 150px; }
+    section.gallery span {
+      font-size: 20px;
+      color: #ffba00;
+      left: 45%;
+      top: 6%; }
+    section.gallery .grid-gallery {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center; }
+      section.gallery .grid-gallery .img1 {
+        grid-area: 1 / 1 / 2 / 3;
+        width: 560px;
+        height: 350px; }
+      section.gallery .grid-gallery .img2 {
+        grid-area: 2 / 1 / 3 / 2;
+        width: 275px;
+        height: 350px; }
+      section.gallery .grid-gallery .img3 {
+        grid-area: 2 / 2 / 3 / 3;
+        width: 275px;
+        height: 350px; }
+    section.gallery .box2 {
+      width: 100px;
+      height: 350px;
+      margin-left: 150px; }
+    section.gallery h1 {
+      top: 72%;
+      left: 40%;
+      font-size: 28px; }
+    section.gallery .grid-find {
+      width: 75%;
+      top: 80%;
+      left: 15%;
+      justify-items: center; }
+      section.gallery .grid-find .lorem {
+        font-size: 18px; }
+      section.gallery .grid-find .here {
+        font-size: 18px; }
+        section.gallery .grid-find .here .fa-instagram {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 7px; }
+        section.gallery .grid-find .here .fa-facebook {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 10px; }
+        section.gallery .grid-find .here .fa-twitter {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 7px; }
+        section.gallery .grid-find .here .fa-whatsapp {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 7px; }
+
+  footer {
+    height: auto; }
+    footer .grid-footer {
+      padding-top: 50px;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      text-align: center;
+      grid-gap: 20px; } }
+@media only screen and (max-width: 600px) {
+  header {
+    height: 400px; }
+    header .grid-nav {
+      grid-template-columns: 1fr; }
+      header .grid-nav .bran h1 {
+        padding: 5px 50px 15px 50px; }
+      header .grid-nav .nav-bar {
+        margin-top: 30px; }
+        header .grid-nav .nav-bar li a {
+          padding: 0 20px; }
+    header .heading {
+      height: 60px;
+      margin-top: 80px; }
+      header .heading .text {
+        padding-left: 7%; }
+        header .heading .text h1 {
+          display: inline;
+          font-size: 34px; }
+        header .heading .text p {
+          font-size: 34px; }
+      header .heading span {
+        font-size: 20px;
+        top: 56%;
+        left: 50%;
+        padding: 7px 20px;
+        border: 3px solid #fff; }
+
+  section.content {
+    height: 400px; }
+    section.content img {
+      margin-top: 10px;
+      width: 60%; }
+    section.content span {
+      top: 45%;
+      left: -2%;
+      font-size: 36px; }
+    section.content h4 {
+      top: 29%;
+      left: 19%;
+      font-size: 18px; }
+    section.content div {
+      top: 36%;
+      left: 6%;
+      padding: 0 20px; }
+      section.content div h3 {
+        font-size: 18px;
+        padding: 10px 10px 10px 50px; }
+    section.content h5 {
+      font-size: 18px;
+      top: 66%; }
+
+  section.grid {
+    height: 420px;
+    background-color: #fff; }
+    section.grid .grid-lorem {
+      grid-template-columns: 1fr;
+      margin-top: 70px;
+      grid-gap: 30px; }
+      section.grid .grid-lorem .item h2 {
+        font-size: 24px; }
+      section.grid .grid-lorem .item p {
+        color: #000;
+        font-size: 14px;
+        margin-top: 10px; }
+
+  section.list-menu {
+    height: 800px; }
+    section.list-menu span {
+      font-size: 36px;
+      padding-top: 50px; }
+    section.list-menu h1 {
+      margin-top: 50px;
+      font-size: 32px;
+      border: 2px solid #fff;
+      padding: 0 20% 4% 16%;
+      left: 17%; }
+    section.list-menu .grid {
+      margin-top: 80px;
+      width: 70%;
+      left: 30%; }
+      section.list-menu .grid .grid-menu {
+        grid-template-columns: 80% 20%;
+        padding: 20px 0;
+        padding-left: 10px; }
+        section.list-menu .grid .grid-menu .menu h3 {
+          font-size: 18px; }
+        section.list-menu .grid .grid-menu .menu p {
+          font-size: 14px; }
+        section.list-menu .grid .grid-menu .price {
+          width: 45%;
+          margin: 0; }
+          section.list-menu .grid .grid-menu .price p {
+            font-size: 18px;
+            padding-bottom: 34px; }
+    section.list-menu .sale {
+      width: 60%;
+      margin-top: 80px;
+      padding: 1% 8%; }
+      section.list-menu .sale p {
+        font-size: 24px; }
+
+  section.concept {
+    height: 300px; }
+    section.concept h1 {
+      padding-top: 90px;
+      font-size: 32px; }
+    section.concept p {
+      padding-top: 20px;
+      font-size: 14px; }
+    section.concept .flex {
+      margin-top: 10px;
+      font-size: 16px; }
+      section.concept .flex b {
+        padding: 0 10px; }
+
+  section.masterclass {
+    height: 700px; }
+    section.masterclass h1 {
+      font-size: 24px;
+      padding: 50px 35px 0 0; }
+    section.masterclass .recipe {
+      width: 60%;
+      right: 7.6%; }
+      section.masterclass .recipe h2 {
+        font-size: 20px;
+        padding: 30px; }
+      section.masterclass .recipe .wait {
+        font-size: 28px;
+        padding-left: 30px; }
+      section.masterclass .recipe .price-time {
+        font-size: 24px;
+        margin-top: 70px;
+        padding-right: 30px; }
+    section.masterclass .apply {
+      width: 50%;
+      right: 7.6%;
+      font-size: 24px;
+      padding: 40px 0 20px 20px; }
+
+  section.gallery {
+    height: auto; }
+    section.gallery .box1 {
+      width: 100px;
+      height: 100px;
+      margin-left: 75px; }
+    section.gallery span {
+      font-size: 20px;
+      color: #ffba00;
+      left: 45%;
+      top: 6%; }
+    section.gallery .grid-gallery {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center; }
+      section.gallery .grid-gallery .img1 {
+        grid-area: 1 / 1 / 2 / 3;
+        width: 400px;
+        height: 250px; }
+      section.gallery .grid-gallery .img2 {
+        grid-area: 2 / 1 / 3 / 2;
+        width: 200px;
+        height: 250px; }
+      section.gallery .grid-gallery .img3 {
+        grid-area: 2 / 2 / 3 / 3;
+        width: 200px;
+        height: 250px; }
+    section.gallery .box2 {
+      width: 100px;
+      height: 300px;
+      margin-left: 75px; }
+    section.gallery h1 {
+      top: 70%;
+      left: 38%;
+      font-size: 28px; }
+    section.gallery .grid-find {
+      width: 95%;
+      top: 78%;
+      left: 3%;
+      justify-items: center; }
+      section.gallery .grid-find .lorem {
+        font-size: 14px; }
+      section.gallery .grid-find .here {
+        font-size: 14px; }
+        section.gallery .grid-find .here .fa-instagram {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 7px; }
+        section.gallery .grid-find .here .fa-facebook {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 10px; }
+        section.gallery .grid-find .here .fa-twitter {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 7px; }
+        section.gallery .grid-find .here .fa-whatsapp {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 7px; }
+
+  footer {
+    height: auto; }
+    footer .grid-footer {
+      padding-top: 50px;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      text-align: center;
+      grid-gap: 20px; } }
+@media only screen and (max-width: 480px) {
+  header {
+    height: 325px; }
+    header .grid-nav {
+      grid-template-columns: 1fr; }
+      header .grid-nav .bran h1 {
+        padding: 5px 50px 15px 50px; }
+      header .grid-nav .nav-bar {
+        margin-top: 30px; }
+        header .grid-nav .nav-bar li a {
+          padding: 0 20px; }
+    header .heading {
+      height: 60px;
+      margin-top: 80px; }
+      header .heading .text {
+        padding-left: 7%; }
+        header .heading .text h1 {
+          display: inline;
+          font-size: 34px; }
+        header .heading .text p {
+          font-size: 34px; }
+      header .heading span {
+        font-size: 20px;
+        top: 56%;
+        left: 50%;
+        padding: 7px 20px;
+        border: 3px solid #fff; }
+
+  section.content {
+    height: 300px; }
+    section.content img {
+      margin-top: 10px;
+      width: 60%; }
+    section.content span {
+      top: 45%;
+      left: -2%;
+      font-size: 28px; }
+    section.content h4 {
+      top: 29%;
+      left: 19%;
+      font-size: 14px; }
+    section.content div {
+      top: 36%;
+      left: 6%;
+      padding: 0 10px; }
+      section.content div h3 {
+        font-size: 14px;
+        padding: 10px 10px 10px 50px; }
+    section.content h5 {
+      font-size: 12px;
+      top: 68%; }
+
+  section.grid {
+    height: 420px;
+    background-color: #fff; }
+    section.grid .grid-lorem {
+      grid-template-columns: 1fr;
+      margin-top: 70px;
+      grid-gap: 30px; }
+      section.grid .grid-lorem .item h2 {
+        font-size: 24px; }
+      section.grid .grid-lorem .item p {
+        color: #000;
+        font-size: 14px;
+        margin-top: 10px; }
+
+  section.list-menu {
+    height: 850px; }
+    section.list-menu span {
+      font-size: 36px;
+      padding-top: 50px; }
+    section.list-menu h1 {
+      margin-top: 50px;
+      font-size: 32px;
+      border: 2px solid #fff;
+      padding: 0 20% 4% 16%;
+      left: 10%; }
+    section.list-menu .grid {
+      margin-top: 100px;
+      width: 70%;
+      left: 30%; }
+      section.list-menu .grid .grid-menu {
+        grid-template-columns: 80% 20%;
+        padding: 20px 0;
+        padding-left: 10px; }
+        section.list-menu .grid .grid-menu .menu h3 {
+          font-size: 18px; }
+        section.list-menu .grid .grid-menu .menu p {
+          font-size: 14px; }
+        section.list-menu .grid .grid-menu .price {
+          width: 45%;
+          margin: 0; }
+          section.list-menu .grid .grid-menu .price p {
+            font-size: 18px;
+            padding-bottom: 34px; }
+    section.list-menu .sale {
+      width: 60%;
+      margin-top: 100px;
+      padding: 1% 8%; }
+      section.list-menu .sale p {
+        font-size: 24px; }
+
+  section.concept {
+    height: 200px; }
+    section.concept h1 {
+      padding-top: 50px;
+      font-size: 24px; }
+    section.concept p {
+      padding-top: 20px;
+      font-size: 10px; }
+    section.concept .flex {
+      margin-top: 10px;
+      font-size: 12px; }
+      section.concept .flex b {
+        padding: 0 10px; }
+
+  section.masterclass {
+    height: 700px; }
+    section.masterclass h1 {
+      font-size: 24px;
+      padding: 50px 35px 0 0; }
+    section.masterclass .recipe {
+      width: 60%;
+      right: 7.6%; }
+      section.masterclass .recipe h2 {
+        font-size: 20px;
+        padding: 30px; }
+      section.masterclass .recipe .wait {
+        font-size: 28px;
+        padding-left: 30px; }
+      section.masterclass .recipe .price-time {
+        font-size: 24px;
+        margin-top: 70px;
+        padding-right: 30px; }
+    section.masterclass .apply {
+      width: 50%;
+      right: 7.6%;
+      font-size: 24px;
+      padding: 40px 0 20px 20px; }
+
+  section.gallery {
+    height: auto; }
+    section.gallery .box1 {
+      width: 100px;
+      height: 100px;
+      margin-left: 75px; }
+    section.gallery span {
+      font-size: 20px;
+      color: #ffba00;
+      left: 45%;
+      top: 6%; }
+    section.gallery .grid-gallery {
+      grid-template-columns: 1fr;
+      justify-items: center; }
+      section.gallery .grid-gallery .img1 {
+        grid-area: 1 / 1 / 2 / 3;
+        width: 300px;
+        height: 200px; }
+      section.gallery .grid-gallery .img2 {
+        grid-area: 2 / 1 / 3 / 2;
+        width: 170px;
+        height: 200px; }
+      section.gallery .grid-gallery .img3 {
+        grid-area: 2 / 2 / 3 / 3;
+        width: 170px;
+        height: 200px; }
+    section.gallery .box2 {
+      width: 100px;
+      height: 300px;
+      margin-left: 75px; }
+    section.gallery h1 {
+      top: 70%;
+      left: 38%;
+      font-size: 28px; }
+    section.gallery .grid-find {
+      width: 95%;
+      top: 78%;
+      left: 3%;
+      justify-items: center; }
+      section.gallery .grid-find .lorem {
+        font-size: 14px; }
+      section.gallery .grid-find .here {
+        font-size: 14px; }
+        section.gallery .grid-find .here .fa-instagram {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 7px; }
+        section.gallery .grid-find .here .fa-facebook {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 10px; }
+        section.gallery .grid-find .here .fa-twitter {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 7px; }
+        section.gallery .grid-find .here .fa-whatsapp {
+          margin-top: 5px;
+          font-size: 18px;
+          padding: 5px 7px; }
+
+  footer {
+    height: auto; }
+    footer .grid-footer {
+      padding-top: 50px;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      text-align: center;
+      grid-gap: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
