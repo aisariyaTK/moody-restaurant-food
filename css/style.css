@@ -65,40 +65,34 @@ section.content {
     position: absolute;
     right: 0;
     top: 13%; }
-  section.content span {
-    color: #fff;
-    position: absolute;
-    display: inline-block;
-    top: 45%;
-    left: 1%;
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    font-size: 72px;
-    z-index: 999; }
-  section.content h4 {
-    color: #fff;
-    position: absolute;
-    display: inline-block;
-    top: 22%;
-    left: 19%;
-    font-size: 48px; }
   section.content div {
     color: #fff;
     position: absolute;
     top: 35%;
     left: 6%;
     background-color: #ffba00;
-    padding: 10px 200px; }
+    padding: 10px 15%; }
+    section.content div span {
+      color: #fff;
+      position: absolute;
+      display: inline-block;
+      top: 37%;
+      left: -10%;
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      font-size: 72px;
+      z-index: 999; }
+    section.content div h4 {
+      font-size: 48px;
+      position: absolute;
+      top: -30%; }
     section.content div h3 {
       font-size: 36px;
       padding: 20px 0; }
-  section.content h5 {
-    color: #fff;
-    font-size: 36px;
-    position: absolute;
-    display: inline-block;
-    top: 76%;
-    left: 18.7%; }
+    section.content div h5 {
+      font-size: 36px;
+      position: absolute;
+      top: 107%; }
 
 section.grid {
   width: 100%;
@@ -370,25 +364,23 @@ footer {
     section.content img {
       margin-top: 10px;
       width: 60%; }
-    section.content span {
-      top: 45%;
-      left: -3%;
-      font-size: 52px; }
-    section.content h4 {
-      top: 30%;
-      left: 17%;
-      font-size: 32px; }
     section.content div {
       top: 40%;
       left: 6%;
       padding: 0 40px; }
+      section.content div span {
+        left: -15%;
+        font-size: 52px; }
+      section.content div h4 {
+        top: -39%;
+        left: 18%;
+        font-size: 32px; }
       section.content div h3 {
         font-size: 24px;
         padding: 10px 10px 10px 60px; }
-    section.content h5 {
-      font-size: 22px;
-      top: 64%;
-      left: 16%; }
+      section.content div h5 {
+        font-size: 22px;
+        left: 18.5%; }
 
   section.grid {
     height: 400px; }
@@ -578,25 +570,24 @@ footer {
     section.content img {
       margin-top: 10px;
       width: 60%; }
-    section.content span {
-      top: 45%;
-      left: -3%;
-      font-size: 44px; }
-    section.content h4 {
-      top: 27%;
-      left: 17%;
-      font-size: 28px; }
     section.content div {
       top: 36%;
       left: 6%;
-      padding: 0 20px; }
+      padding: 0 2%; }
+      section.content div span {
+        top: 35%;
+        left: -13%;
+        font-size: 44px; }
+      section.content div h4 {
+        font-size: 28px;
+        left: 15%; }
       section.content div h3 {
         font-size: 24px;
         padding: 10px 10px 10px 60px; }
-    section.content h5 {
-      font-size: 22px;
-      top: 64%;
-      left: 17%; }
+      section.content div h5 {
+        font-size: 22px;
+        top: 115%;
+        left: 16%; }
 
   section.grid {
     height: 420px;
@@ -787,24 +778,22 @@ footer {
     section.content img {
       margin-top: 10px;
       width: 60%; }
-    section.content span {
-      top: 45%;
-      left: -2%;
-      font-size: 36px; }
-    section.content h4 {
-      top: 29%;
-      left: 19%;
-      font-size: 18px; }
     section.content div {
       top: 36%;
       left: 6%;
       padding: 0 20px; }
+      section.content div span {
+        font-size: 36px; }
+      section.content div h4 {
+        top: -25%;
+        left: 17%;
+        font-size: 18px; }
       section.content div h3 {
         font-size: 18px;
         padding: 10px 10px 10px 50px; }
-    section.content h5 {
-      font-size: 18px;
-      top: 66%; }
+      section.content div h5 {
+        font-size: 16px;
+        left: 18.3%; }
 
   section.grid {
     height: 420px;
@@ -995,24 +984,21 @@ footer {
     section.content img {
       margin-top: 10px;
       width: 60%; }
-    section.content span {
-      top: 45%;
-      left: -2%;
-      font-size: 28px; }
-    section.content h4 {
-      top: 29%;
-      left: 19%;
-      font-size: 14px; }
     section.content div {
       top: 36%;
       left: 6%;
       padding: 0 10px; }
+      section.content div span {
+        font-size: 28px; }
+      section.content div h4 {
+        font-size: 14px;
+        left: 20%; }
       section.content div h3 {
         font-size: 14px;
         padding: 10px 10px 10px 50px; }
-    section.content h5 {
-      font-size: 12px;
-      top: 68%; }
+      section.content div h5 {
+        font-size: 12px;
+        left: 19.6%; }
 
   section.grid {
     height: 420px;

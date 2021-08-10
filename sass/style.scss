@@ -88,45 +88,40 @@ section.content {
         right: 0;
         top: 13%;
     }
-    span {
-        color: #fff;
-        position: absolute;
-        display: inline-block;
-        top: 45%;
-        left: 1%;
-        -ms-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-        font-size: 72px;
-        z-index: 999;
-    }
-    h4 {
-        color: #fff;
-        position: absolute;
-        display: inline-block;
-        top: 22%;
-        left: 19%;
-        font-size: 48px;
-    }
+
     div {
         color: #fff;
         position: absolute;
         top: 35%;
         left: 6%;
         background-color: #ffba00;
-        padding: 10px 200px;
+        padding: 10px 15%;
 
+        span {
+            color: #fff;
+            position: absolute;
+            display: inline-block;
+            top: 37%;
+            left: -10%;
+            -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            font-size: 72px;
+            z-index: 999;
+        }
+        h4 {
+            font-size: 48px;
+            position: absolute;
+            top: -30%;
+        }
         h3 {
             font-size: 36px;
             padding: 20px 0;
         }
-    }
-    h5 {
-        color: #fff;
-        font-size: 36px;
-        position: absolute;
-        display: inline-block;
-        top: 76%;
-        left: 18.7%;
+        h5 {
+            font-size: 36px;
+            position: absolute;
+            top: 107%;
+        }
     }
 }
 
@@ -527,30 +522,30 @@ footer {
             margin-top: 10px;
             width: 60%;
         }
-        span {
-            top: 45%;
-            left: -3%;
-            font-size: 52px;
-        }
-        h4 {
-            top: 30%;
-            left: 17%;
-            font-size: 32px;
-        }
+
         div {
             top: 40%;
             left: 6%;
             padding: 0 40px;
-    
+            
+            span {
+                left: -15%;
+                font-size: 52px;
+            }
+            h4 {
+                top: -39%;
+                left: 18%;
+                font-size: 32px;
+            }
             h3 {
                 font-size: 24px;
                 padding: 10px 10px 10px 60px;
             }
-        }
-        h5 {
-            font-size: 22px;
-            top: 64%;
-            left: 16%;
+            h5 {
+                font-size: 22px;
+                // top: 64%;
+                left: 18.5%;
+            }
         }
     }
 
@@ -837,30 +832,29 @@ footer {
             margin-top: 10px;
             width: 60%;
         }
-        span {
-            top: 45%;
-            left: -3%;
-            font-size: 44px;
-        }
-        h4 {
-            top: 27%;
-            left: 17%;
-            font-size: 28px;
-        }
         div {
             top: 36%;
             left: 6%;
-            padding: 0 20px;
-    
+            padding: 0 2%;
+            
+            span {
+                top: 35%;
+                left: -13%;
+                font-size: 44px;
+            }
+            h4 {
+                font-size: 28px;
+                left: 15%;
+            }
             h3 {
                 font-size: 24px;
                 padding: 10px 10px 10px 60px;
             }
-        }
-        h5 {
-            font-size: 22px;
-            top: 64%;
-            left: 17%;
+            h5 {
+                font-size: 22px;
+                top: 115%;
+                left: 16%;
+            }
         }
     }
 
@@ -1148,29 +1142,27 @@ footer {
             margin-top: 10px;
             width: 60%;
         }
-        span {
-            top: 45%;
-            left: -2%;
-            font-size: 36px;
-        }
-        h4 {
-            top: 29%;
-            left: 19%;
-            font-size: 18px;
-        }
         div {
             top: 36%;
             left: 6%;
             padding: 0 20px;
-    
+            
+            span {
+                font-size: 36px;
+            }
+            h4 {
+                top: -25%;
+                left: 17%;
+                font-size: 18px;
+            }
             h3 {
                 font-size: 18px;
                 padding: 10px 10px 10px 50px;
             }
-        }
-        h5 {
-            font-size: 18px;
-            top: 66%;
+            h5 {
+                font-size: 16px;
+                left: 18.3%;
+            }
         }
     }
 
@@ -1462,29 +1454,26 @@ footer {
             margin-top: 10px;
             width: 60%;
         }
-        span {
-            top: 45%;
-            left: -2%;
-            font-size: 28px;
-        }
-        h4 {
-            top: 29%;
-            left: 19%;
-            font-size: 14px;
-        }
         div {
             top: 36%;
             left: 6%;
             padding: 0 10px;
-    
+            
+            span {
+                font-size: 28px;
+            }
+            h4 {
+                font-size: 14px;
+                left: 20%;
+            }
             h3 {
                 font-size: 14px;
                 padding: 10px 10px 10px 50px;
             }
-        }
-        h5 {
-            font-size: 12px;
-            top: 68%;
+            h5 {
+                font-size: 12px;
+                left: 19.6%;
+            }
         }
     }
 
